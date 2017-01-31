@@ -24,7 +24,7 @@ System.out.println("inside search");
 
     public static void main(String[] args) {
 	int port = getHerokuAssignedPort();
-	System.out.println("The current port is: " + port);
+	System.out.println(port);
 	port(port);
 
         get("/", (req, res) -> "Hello, World");
