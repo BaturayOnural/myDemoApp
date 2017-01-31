@@ -26,9 +26,9 @@ public class AppTest
       ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
       assertFalse(new App().search(array, 0,2));
     }
-    public void testFound() { /*Checks the arithmetic operations of inputs.*/
+    public void testFound() { /*Checks the (num1-num2) || (num1*num2)*/
       ArrayList<Integer> array = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
-      assertTrue(new App().search(array, 2,3));
+      assertTrue(new App().search(array, 1,3));
     }
 
     public void testNotFound() {
